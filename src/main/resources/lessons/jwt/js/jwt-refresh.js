@@ -7,7 +7,7 @@ function login(user) {
         type: 'POST',
         url: 'JWT/refresh/login',
         contentType: "application/json",
-        data: JSON.stringify({user: user, password: user.password})
+        data: JSON.stringify({user: user, password: "a43$xfmoierZf"})
     }).success(
         function (response) {
             localStorage.setItem('access_token', response['access_token']);
